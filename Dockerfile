@@ -4,7 +4,5 @@ LABEL maintainer="Jeffrey Chang <me@jeffchang.io>"
 
 USER root
 
-RUN pip install \
-    'tensorflow' \ 
-    'numpy'
+CMD jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
 
